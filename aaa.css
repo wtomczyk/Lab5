@@ -1,0 +1,23 @@
+#kwadrat{
+    width:100px;
+    height:100px;
+    background-color: green;
+}
+#trojkat{
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid yellow;
+}
+#okrag{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: red;
+}
+#drugikwadrat{
+    width:100px;
+    height:100px;
+    background-color: red;
+}
