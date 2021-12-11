@@ -29,11 +29,51 @@ $(document).ready(function(){
         $("p").slideToggle()
     })
     $("#btn8").click(function(){
-        $("#drugikwadrat").animate({height:'1000px',width:'10px',backgroundColor:'yellow'},"slow")
-        $("#drugikwadrat").animate({height:'10px',width:'1000px',color:'black'},"slow")
-        $("#drugikwadrat").animate({height:'1000px',width:'10px',color:'cyan'},"slow")
-        $("#drugikwadrat").animate({height:'10px',width:'1000px',color:'magenta'},"slow")
-        $("#drugikwadrat").animate({height:'1000px',width:'10px',color:'blue'},"slow")
-        $("#drugikwadrat").animate({height:'10px',width:'1000px',color:'orange'},"slow")
+        $("#drugikwadrat").animate({height:'1000px',width:'10px'},"slow",function(){
+            $("#drugikwadrat").css("background-color",'green')
+            $("#drugikwadrat").css("color",'cyan')
+            $("#drugikwadrat").css("font-size",'100px')
+        })
+        $("#drugikwadrat").animate({height:'10px',width:'1000px'},"slow",function(){
+            $("#drugikwadrat").css("background-color",'red')
+            $("#drugikwadrat").css("color",'magenta')
+            $("#drugikwadrat").css("font-size",'10px')
+        })
+        $("#drugikwadrat").animate({height:'1000px',width:'10px'},"slow",function(){
+            $("#drugikwadrat").css("background-color",'green')
+            $("#drugikwadrat").css("color",'cyan')
+            $("#drugikwadrat").css("font-size",'100px')
+        })
+        $("#drugikwadrat").animate({height:'10px',width:'1000px'},"slow",function(){
+            $("#drugikwadrat").css("background-color",'red')
+            $("#drugikwadrat").css("color",'magenta')
+            $("#drugikwadrat").css("font-size",'10px')
+        })
+        $("#drugikwadrat").animate({height:'1000px',width:'10px'},"slow",function(){
+            $("#drugikwadrat").css("background-color",'green')
+            $("#drugikwadrat").css("color",'cyan')
+            $("#drugikwadrat").css("font-size",'100px')
+        })
+        $("#drugikwadrat").animate({height:'10px',width:'1000px'},"slow",function(){
+            $("#drugikwadrat").css("background-color",'red')
+            $("#drugikwadrat").css("color",'magenta')
+            $("#drugikwadrat").css("font-size",'10px')
+        })
+    })
+    $("#btn9").click(function(){
+        $("#drugikwadrat").stop()
+    })
+    $("#btn10").click(function(){
+        $("#drugikwadrat").css("color",'blue').slideUp(1500).slideDown(1000)
+    })
+    $("#btn11").click(function(){
+        $("#drugikwadrat").animate({height:'1000px',width:'10px'},"slow",function(){
+            $("#drugikwadrat").css("height",'200px')
+            $("#drugikwadrat").css("width",'200px')
+            $("#drugikwadrat").css("color",'magenta')
+        })
+    })
+    $("#btn12").click(function(){
+        $("#drugikwadrat").css("color",'blue').slideUp(100).slideDown(100).slideUp(100).slideDown(100).slideUp(100).slideDown(100)
     })
 })
